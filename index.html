@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Marketing Help Center</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: #f5f7fa; }
+    .hero { background: #1f4e78; color: #fff; padding: 3rem 1rem; }
+    .hero p { opacity: .9; }
+    .accordion-button:not(.collapsed) { background: #e8f0f8; color: #1f4e78; }
+    .cat { font-size: .75rem; }
+    .escalate { background: #fff8e1; border-left: 4px solid #f0ad00; padding: .5rem .75rem; margin-top: .75rem; font-size: .9rem; }
+  </style>
+</head>
+<body>
+
+<header class="hero text-center">
+  <div class="container">
+    <h1 class="h2">Digital Marketing Help Center</h1>
+    <p>Quick fixes for Google Ads, tracking, Excel reports and landing pages.</p>
+    <div class="col-md-6 mx-auto">
+      <input id="search" type="search" class="form-control form-control-lg"
+             placeholder="Search e.g. ad disapproved, #N/A, conversions" aria-label="Search help articles">
+    </div>
+  </div>
+</header>
+
+<main class="container my-4" style="max-width: 820px;">
+  <div class="accordion" id="faq">
+
+    <div class="accordion-item" data-text="ad disapproved destination not working landing page 404 google ads">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+        <span class="badge text-bg-primary cat me-2">Google Ads</span> My ad was disapproved: "Destination not working"</button></h2>
+      <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Open the ad's website link in your browser on both phone and computer.</li>
+          <li>If the page shows an error (such as 404), correct the link or restore the page.</li>
+          <li>Update the final URL in your ad and resubmit it for review.</li>
+        </ol>
+        <div class="escalate"><strong>Escalate if:</strong> the ad is disapproved again after the page loads correctly.</div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item" data-text="campaign not serving impressions budget google ads">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+        <span class="badge text-bg-primary cat me-2">Google Ads</span> My campaign is not getting impressions</button></h2>
+      <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Check that the campaign status is Enabled and not paused by a schedule or rule.</li>
+          <li>Check that the daily budget is above zero.</li>
+          <li>Check that the ads are approved and the payment method is active.</li>
+        </ol>
+        <div class="escalate"><strong>Escalate if:</strong> everything looks correct but there are still no impressions after 24 hours.</div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item" data-text="sitelink extensions not showing ads">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+        <span class="badge text-bg-primary cat me-2">Google Ads</span> My sitelinks are not showing</button></h2>
+      <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Open Ads &amp; assets and check the status of each sitelink.</li>
+          <li>If a sitelink is unapproved, read the reason, edit the text or link, and resubmit.</li>
+          <li>Make sure at least two sitelinks are active; extensions do not show every time.</li>
+        </ol>
+        <div class="escalate"><strong>Escalate if:</strong> sitelinks are approved but never appear after several days.</div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item" data-text="conversions zero not recording tracking tag">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
+        <span class="badge text-bg-success cat me-2">Tracking</span> Conversions are showing 0</button></h2>
+      <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Check the conversion action status in the account (Recording, No recent conversions, or Unverified).</li>
+          <li>Confirm the tracking tag is still on the thank-you page; site updates can remove it.</li>
+          <li>Make a test conversion and check it appears after a few hours.</li>
+        </ol>
+        <div class="escalate"><strong>Escalate if:</strong> the tag is present but conversions still do not record.</div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item" data-text="duplicate conversions counted twice tracking tag">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5">
+        <span class="badge text-bg-success cat me-2">Tracking</span> One purchase is counted as two conversions</button></h2>
+      <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Check whether the conversion tag is installed twice on the confirmation page.</li>
+          <li>Check that the conversion action counts "One" (not "Every") for lead-type goals.</li>
+          <li>Remove the duplicate tag and run a test purchase.</li>
+        </ol>
+        <div class="escalate"><strong>Escalate if:</strong> the tag is managed by a web team, so they can remove it.</div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item" data-text="vlookup na error excel spaces trim">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6">
+        <span class="badge text-bg-warning cat me-2">Excel</span> VLOOKUP shows #N/A but the value exists</button></h2>
+      <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Look for extra spaces before or after the text in the lookup column.</li>
+          <li>In a helper column, use <code>=TRIM(A2)</code> and fill down.</li>
+          <li>Use the cleaned column and set the last VLOOKUP argument to <code>FALSE</code> for an exact match.</li>
+        </ol>
+        <div class="escalate"><strong>Escalate if:</strong> the errors remain after trimming.</div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item" data-text="pivot table not refreshing new data excel">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q7">
+        <span class="badge text-bg-warning cat me-2">Excel</span> My pivot table does not show new data</button></h2>
+      <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Right-click the pivot table and choose <strong>Refresh</strong>.</li>
+          <li>Click a cell in the source data and press <code>Ctrl+T</code> to make it a Table so new rows are included.</li>
+          <li>Refresh the pivot table again.</li>
+        </ol>
+      </div></div>
+    </div>
+
+    <div class="accordion-item" data-text="report totals do not match duplicate rows excel dashboard">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q8">
+        <span class="badge text-bg-warning cat me-2">Excel</span> My report total does not match the Ads dashboard</button></h2>
+      <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Check for duplicate rows: Data &gt; Remove Duplicates.</li>
+          <li>Confirm both use the same date range and currency.</li>
+          <li>Check that your SUM range covers all the rows.</li>
+        </ol>
+        <div class="escalate"><strong>Escalate if:</strong> the totals still differ after these checks.</div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item" data-text="heading misaligned mobile viewport html landing page">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q9">
+        <span class="badge text-bg-secondary cat me-2">Web/HTML</span> My landing page looks wrong on mobile</button></h2>
+      <div id="q9" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Check that the page's <code>&lt;head&gt;</code> contains this line:<br>
+              <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></li>
+          <li>Save and refresh the page on your phone.</li>
+          <li>Test again using Chrome DevTools (F12, then the phone icon).</li>
+        </ol>
+      </div></div>
+    </div>
+
+    <div class="accordion-item" data-text="image not loading broken path html src">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q10">
+        <span class="badge text-bg-secondary cat me-2">Web/HTML</span> An image is not loading on my page</button></h2>
+      <div id="q10" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+        <ol>
+          <li>Check the <code>src</code> path in the <code>&lt;img&gt;</code> tag: spelling, capital letters and folder name.</li>
+          <li>Make sure the image file was uploaded to that folder.</li>
+          <li>Reload the page while holding Shift to clear the cached version.</li>
+        </ol>
+      </div></div>
+    </div>
+
+  </div>
+
+  <p id="none" class="text-center text-muted my-4" hidden>No articles found. Try a different word, or contact us below.</p>
+
+  <div class="card mt-4"><div class="card-body text-center">
+    <h2 class="h5">Still need help?</h2>
+    <p class="mb-0">Email <a href="mailto:support@example.com">support@example.com</a> with a screenshot and a short description of the problem.</p>
+  </div></div>
+</main>
+
+<footer class="text-center text-muted small py-4">Practice project. Made by Lal Sushant Nath Shahdeo.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const box = document.getElementById('search');
+  const items = document.querySelectorAll('#faq .accordion-item');
+  const none = document.getElementById('none');
+  box.addEventListener('input', () => {
+    const q = box.value.trim().toLowerCase();
+    let shown = 0;
+    items.forEach(it => {
+      const hay = (it.dataset.text + ' ' + it.textContent).toLowerCase();
+      const match = !q || hay.includes(q);
+      it.hidden = !match;
+      if (match) shown++;
+    });
+    none.hidden = shown > 0;
+  });
+</script>
+</body>
+</html>
