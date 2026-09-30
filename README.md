@@ -3,7 +3,7 @@ Digital Marketing Help Center
 
 A simple, searchable help-center web page with 10 FAQ answers for common support issues in Google Ads, conversion tracking, Excel reports and landing pages. Built as a practice project for a Backoffice Helpdesk role.
 
-Live demo: https://sushant12shahdeo.github.io/helpdesk-help-center/file:///C:/Users/Admin/Downloads/index.html
+Live demo: C:/Users/Admin/Downloads/index.html
 
 Features
 10 FAQs grouped by category: Google Ads, Tracking, Excel, Web/HTML
